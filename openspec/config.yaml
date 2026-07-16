@@ -8,6 +8,12 @@ schema: spec-driven
 #     Tech stack: TypeScript, React, Node.js
 #     We use conventional commits
 #     Domain: e-commerce platform
+  context: |
+    This is a collection of CLI tools under a common package name.
+    Tech stack: Rust, Jujutsu (https://docs.jj-vcs.dev/latest/), Nix
+    The developer shell comes from devenv (https://devenv.sh/)
+    We use conventional commits
+
 
 # Per-artifact rules (optional)
 # Add custom rules for specific artifacts.
@@ -18,3 +24,10 @@ schema: spec-driven
 #       - Always include a "Non-goals" section
 #     tasks:
 #       - Break tasks into chunks of max 2 hours
+  rules:
+    source:
+      - Use Rust
+      - Use documentation comments throughout
+      - All code must compile, all tests must pass
+      - Run clippy and fix any issues
+      - Format with rustfmt
