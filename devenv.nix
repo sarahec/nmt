@@ -4,6 +4,7 @@
   # https://devenv.sh/packages/
   packages = with pkgs; [
     evcxr
+    openspec
   ];
 
   dotenv.enable = true;
